@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Raleway:ital,wght@0,400;0,500;0,600;1,500;1,600&display=swap');
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #FFFFFF;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+}
+
+.banner{
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	white-space: nowrap;
+	overflow: hidden;
+	background-color: #000000;
+	padding: 25px;
+}
+
+.banner h1{
+	font-family: "Lato", sans-serif;
+	font-size: 100px;
+	font-weight: 800;
+	color: #FFFFFF;
+}
+
+.banner h2{
+	font-family: "Lato", sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+	font-style: italic;
+	color: #FFFFFF;
+	margin-top: -50px;
+}
+
+.navbar{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	background-color: #FFFFFF;
+	color: #000000;
+	font-family: "Lato", sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	list-style-type: none;
+	/*border-bottom: 2px solid black;*/
+}
+
+.navbar a{
+	padding: 20px 20px;
+	color: #000000;
+	text-decoration: none;
+}
+
+.navbar a:hover {
+	background-color: #000000;
+	color: #FFFFFF;
+}
+
+#facts{
+	display: flex;
+	flex-flow: column wrap;
+	width: 60%;
+	margin: auto;
+	justify-content: center;
+	align-items: flex-start;
+	background-color: #FFFFFF;
+	color: #6A6866;
+}
+
+#facts h1{
+	padding: 10px;
+	align-self: center;
+	font-family: "Lato", sans-serif;
+	font-size: 30px;
+	font-weight: 800;
+	color: #000000;
+	margin-bottom: -5px;
+}
+
+#facts p{
+	font-family: "Raleway", sans-serif;
+	font-size: 17px;
+	line-height: 25px;
+	margin-bottom: -5px;
+}
+
+#factsbody{
+	font-family: "Raleway", sans-serif;
+	font-size: 17px;
+	line-height: 25px;
+}
+
+#factsbody li{
+	margin-bottom: 20px;
+}
+
+.people a{
+	color: #F29104;
+	font-style: italic;
+	text-decoration: none;
+}
+
+.people a:active{
+	color: #F29104;
+}
+
+.people a:hover{
+	background-color: #F29104;
+	color: #FFFFFF;
+	font-style: italic;
+}
+
+.planet a{
+	color: #4DB37A;
+	font-style: italic;
+	text-decoration: none;
+}
+
+.planet a:active{
+	color: #4DB37A;
+}
+
+.planet a:hover{
+	background-color: #4DB37A;
+	color: #FFFFFF;
+	font-style: italic;
+}
+
+.profit a{
+	color: #0E3756;
+	font-style: italic;
+	text-decoration: none;
+}
+
+.profit a:active{
+	color: #0E3756;
+}
+
+.profit a:hover{
+	background-color: #0E3756;
+	color: #FFFFFF;
+	font-style: italic;
+}
+
+

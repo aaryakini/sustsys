@@ -19,18 +19,17 @@ body{
 *
 */
 
-/* The sidebar menu */
 .sidebar {
-	height: 100%; /* 100% Full-height */
-	width: 0; /* 0 width - change this with JavaScript */
-	position: fixed; /* Stay in place */
-	z-index: 1; /* Stay on top */
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
 	top: 0;
 	left: 0;
 	background-color: #FFFFFF;
-	overflow-x: hidden; /* Disable horizontal scroll */
-	padding-top: 60px; /* Place content 60px from the top */
-	transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: 0.5s;
 }
 
 .sidebar a{
@@ -117,13 +116,17 @@ body{
 
 #templates p{
 	font-family: "Montserrat", sans-serif;
-	font-size: 17px;
+	font-size: 16px;
 	line-height: 25px;
 	margin-bottom: -5px;
 }
 
 #templates a{
+	font-weight: 600;
 	margin-top: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px; 
 	color: #0E3756;
 	text-decoration: none;
 }
@@ -134,5 +137,7 @@ body{
 
 #templates a:hover{
 	background-color: #0E3756;
+	border-radius: 18px;
+	padding: 10px;
 	color: #FFFFFF;
 }

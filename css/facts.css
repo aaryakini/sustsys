@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Raleway:ital,wght@0,400;0,500;0,600;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,800;1,400&display=swap');
 
 *{
 	box-sizing: border-box;
@@ -6,60 +6,92 @@
 
 body{
 	background-color: #FFFFFF;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
 }
 
+/*
+*    Title: How to Collapse Sidebar
+*    Author: W3 Schools
+*    Date: Accessed 26th April 2021
+*    Code version: Source Code
+*    Availability: https://www.w3schools.com/howto/howto_js_collapse_sidebar.asp
+*
+*/
+
+/* The sidebar menu */
+.sidebar {
+	height: 100%; /* 100% Full-height */
+	width: 0; /* 0 width - change this with JavaScript */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Stay on top */
+	top: 0;
+	left: 0;
+	background-color: #FFFFFF;
+	overflow-x: hidden; /* Disable horizontal scroll */
+	padding-top: 60px; /* Place content 60px from the top */
+	transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+.sidebar a{
+	padding: 10px 8px 10px 32px;
+	text-decoration: none;
+	font-size: 16px;
+	color: #1E1E1E;
+	display: block;
+	transition: 0.3s;
+}
+
+.sidebar .closebtn:hover{
+	background-color: #FFFFFF;
+	color: #1E1E1E;
+}
+
+.sidebar a:hover {
+	background-color: #1E1E1E;
+	color: #FFFFFF;
+}
+
+.sidebar .closebtn {
+	position: absolute;
+	top:0;
+	padding-bottom: -50px;
+	right: 10px;
+	font-size: 32px;
+}
+
+.openbtn {
+	position: fixed;
+	font-size: 40px;
+	cursor: pointer;
+	background-color: #1E1E1E;
+	color: white;
+	padding: 9px 17px 12px 17px;
+	border: none;
+}
+
+#main {
+  transition: margin-left .5s;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+/************************************/
+
 .banner{
 	display: flex;
-	flex-flow: column nowrap;
-	justify-content: center;
-	align-items: center;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-content: center;
 	white-space: nowrap;
 	overflow: hidden;
-	background-color: #000000;
-	padding: 25px;
-}
-
-.banner h1{
-	font-family: "Lato", sans-serif;
-	font-size: 100px;
-	font-weight: 800;
-	color: #FFFFFF;
-}
-
-.banner h2{
-	font-family: "Lato", sans-serif;
-	font-size: 20px;
-	font-weight: 700;
-	font-style: italic;
-	color: #FFFFFF;
-	margin-top: -50px;
-}
-
-.navbar{
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	align-items: center;
-	background-color: #FFFFFF;
-	color: #000000;
-	font-family: "Lato", sans-serif;
-	font-weight: bold;
-	font-size: 16px;
-	list-style-type: none;
-	/*border-bottom: 2px solid black;*/
-}
-
-.navbar a{
-	padding: 20px 20px;
-	color: #000000;
-	text-decoration: none;
-}
-
-.navbar a:hover {
-	background-color: #000000;
-	color: #FFFFFF;
+	background-color: #1E1E1E;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 15px;
 }
 
 #facts{
@@ -70,44 +102,80 @@ body{
 	justify-content: center;
 	align-items: flex-start;
 	background-color: #FFFFFF;
-	color: #6A6866;
+	color: #9A9A9A;
 }
 
 #facts h1{
-	padding: 10px;
+	margin-top: 20px;
 	align-self: center;
-	font-family: "Lato", sans-serif;
+	font-family: "Montserrat", sans-serif;
 	font-size: 30px;
 	font-weight: 800;
 	color: #000000;
 	margin-bottom: -5px;
 }
 
-#facts p{
-	font-family: "Raleway", sans-serif;
-	font-size: 17px;
+#facts h2{
+	text-align: center;
+	font-family: "Montserrat", sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	color: #6A6866;
 	line-height: 25px;
-	margin-bottom: -5px;
+	font-style: italic;
 }
 
 #factsbody{
-	font-family: "Raleway", sans-serif;
-	font-size: 17px;
+	font-family: "Montserrat", sans-serif;
 	line-height: 25px;
+	list-style-type: none;
 }
 
 #factsbody li{
 	margin-bottom: 20px;
+
+}
+
+.fact{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+/*PEOPLE*/
+
+.peopleCircle{
+	font-size: 18px;
+	background-color: #F29104;
+	border: none;
+	border-radius: 20%;
+	padding: 10px 15px;
+	margin-right: 10px;
+	color: #FFFFFF;
+}
+
+.peopleHead{
+	flex-direction: wrap;
+	font-size: 18px;
+	font-weight: 600;
+	color: #F29104;
+}
+
+.people{
+	margin-left: 60px;
+	margin-right: 60px;
+	font-size: 15px;
 }
 
 .people a{
-	color: #F29104;
+	color: #9A9A9A;
 	font-style: italic;
 	text-decoration: none;
 }
 
 .people a:active{
-	color: #F29104;
+	color: #9A9A9A;
 }
 
 .people a:hover{
@@ -116,14 +184,40 @@ body{
 	font-style: italic;
 }
 
-.planet a{
+/*PLANET*/
+
+.planetCircle{
+	font-size: 18px;
+	line-height: 25px;
+	background-color: #4DB37A;
+	border: none;
+	border-radius: 20%;
+	padding: 10px 15px;
+	margin-right: 10px;
+	color: #FFFFFF;
+}
+
+.planetHead{
+	flex-direction: wrap;
+	font-size: 18px;
+	font-weight: 600;
 	color: #4DB37A;
+}
+
+.planet{
+	margin-left: 60px;
+	margin-right: 60px;
+	font-size: 15px;
+}
+
+.planet a{
+	color: #9A9A9A;
 	font-style: italic;
 	text-decoration: none;
 }
 
 .planet a:active{
-	color: #4DB37A;
+	color: #9A9A9A;
 }
 
 .planet a:hover{
@@ -132,14 +226,40 @@ body{
 	font-style: italic;
 }
 
-.profit a{
+/*PROFIT*/
+
+.profitCircle{
+	font-size: 18px;
+	line-height: 25px;
+	background-color: #0E3756;
+	border: none;
+	border-radius: 20%;
+	padding: 10px 15px;
+	margin-right: 10px;
+	color: #FFFFFF;
+}
+
+.profitHead{
+	flex-direction: wrap;
+	font-size: 18px;
+	font-weight: 600;
 	color: #0E3756;
+}
+
+.profit{
+	margin-left: 60px;
+	margin-right: 60px;
+	font-size: 15px;
+}
+
+.profit a{
+	color: #9A9A9A;
 	font-style: italic;
 	text-decoration: none;
 }
 
 .profit a:active{
-	color: #0E3756;
+	color: #9A9A9A;
 }
 
 .profit a:hover{

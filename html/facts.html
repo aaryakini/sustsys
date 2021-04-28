@@ -12,75 +12,190 @@
 </head>
 
 <body>
-	<div class="banner">
-		<h1>Cards Against Humanity</h1>
-		<h2>CLIMATE CHANGE PACK</h2>
-	</div>
+	<script src="../js/index.js"></script>
 
-	<div class="navbar">
+	<!--
+		Title: How to Collapse Sidebar
+		Author: W3 Schools
+		Date: Accessed 26th April 2021
+		Code version: Source Code
+		Availability: https://www.w3schools.com/howto/howto_js_collapse_sidebar.asp
+	-->
+
+	<div id="mySidebar" class="sidebar">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		<a href="../index.html">PROMPT CARDS</a>
-		<a href="rules.html">HOW TO PLAY</a>
-		<a href="facts.html">REAL FACTS</a>
-		<a href="templates.html">MAKE YOUR OWN</a>
+		<a href="html/rules.html">HOW TO PLAY</a>
+		<a href="html/facts.html" target=_blank>FACT SHEET</a>
+		<a href="html/templates.html">MAKE YOUR OWN</a>
 	</div>
 
-	<!--<a href="https://docs.google.com/document/d/1CrT5pSwoCsQ936xFTK56QlDeI53A9CsUqH6YYGhIMwQ/edit?usp=sharing" target="_blank">TEMPORARY LINK TO REAL FACTS PAGE</a>-->
+	<div id="main">
+		<div class="banner">
+			<button class="openbtn" onclick="openNav()">&#9776;</button>
+	<!-------------------------------------------------------------->
+			<img id="bannerimg" src="../assets/banner.gif" style = "height: 400px">
+		</div>
 
-	<div id="facts">
-		<h1>FACTS</h1>
+		<div id="facts">
+			<h1>FACT SHEET</h1>
 
-		<p>Below are the real facts and statistics that have inspired the prompt cards in this game.</p>
+			<h2>Below are the real facts that inspired the prompt cards in this game. The numbers on each prompt card correspond to a fact on this page. Click on the citation below each description to access the full source material from which the prompt card was created.</h2>
 
-		<ol id="factsbody">
-			<li class="people">Days that are hotter than the average seasonal temperature in the summer or colder than the average seasonal temperature in the winter cause increased levels of illness and death by compromising the body’s ability to regulate its temperature or by inducing direct or indirect health complications. Loss of internal temperature control can result in a cascade of illnesses, including heat cramps, heat exhaustion, heatstroke, and hyperthermia in the presence of extreme heat, and hypothermia and frostbite in the presence of extreme cold. Temperature extremes can also worsen chronic conditions such as cardiovascular disease, respiratory disease, cerebrovascular disease, and diabetes-related conditions<br><a href="https://health2016.globalchange.gov/" target="_blank">Temperature Related Death and Illness Summary, Climate and Health Assessment 2016, U.S. Global Change Research Program, 2016</a></li>
+			<ul id="factsbody">
 
-			<li class="people">Specific groups of people are at higher risk for distress and other adverse mental health consequences from exposure to climate-related or weather-related disasters. These groups include children, the elderly, women (especially pregnant and postpartum women), people with preexisting mental illness, the economically disadvantaged, the homeless, and first responders.<br><a href="https://health2016.globalchange.gov/" target="_blank">Mental Health and Well-Being Summary, Climate and Health Assessment 2016, U.S. Global Change Research Program, 2016</a></li>
+				<!--PEOPLE-->
 
-			<li class="people">Despite significant improvements in U.S. air quality since the 1970s, as of 2014 about 57 million Americans lived in counties that did not meet national air quality standards. Climate change may make it even harder for states to meet these standards in the future, exposing more people to unhealthy air.<br><a href="https://health2016.globalchange.gov/" target="_blank">Climate Impacts on Human Health, United States Environmental Protection Agency, 2017</a></li>
+				<div class="fact">
+					<b class="peopleCircle">1</b><p class="peopleHead">CLIMATE CHANGE WILL LEAD TO MORE <u>TEMPERATURE</u>-RELATED DEATHS IN THE US.</p>
+				</div>
 
-			<li class="people">Climate change is expected to alter the geographic and seasonal distributions of existing vectors and vector-borne diseases. Vector-borne pathogens are expected to emerge or reemerge due to the interactions of climate factors with many other drivers, such as changing land-use patterns.<br><a href="https://health2016.globalchange.gov/" target="_blank">Vector-Borne Diseases Summary, Climate and Health Assessment 2016, U.S. Global Change Research Program, 2016</a></li>
+				<li class="people">Days that are hotter than the average seasonal temperature in the summer or colder than the average seasonal temperature in the winter cause increased levels of illness and death by compromising the body’s ability to regulate its temperature or by inducing direct or indirect health complications. Loss of internal temperature control can result in a cascade of illnesses, including heat cramps, heat exhaustion, heatstroke, and hyperthermia in the presence of extreme heat, and hypothermia and frostbite in the presence of extreme cold. Temperature extremes can also worsen chronic conditions such as cardiovascular disease, respiratory disease, cerebrovascular disease, and diabetes-related conditions<br><a href="https://health2016.globalchange.gov/" target="_blank">Temperature Related Death and Illness Summary, Climate and Health Assessment 2016, U.S. Global Change Research Program, 2016</a></li>
 
-			<li class="people">Increases in water temperatures associated with climate change will alter the seasonal windows of growth and the geographic range of suitable habitat for freshwater toxin-producing harmful algae, certain naturally occurring Vibrio bacteria, and marine toxin-producing harmful algae. These changes will increase the risk of exposure to waterborne pathogens and algal toxins that can cause a variety of illnesses.<br><a href="https://health2016.globalchange.gov/" target="_blank">Water-Related Illness, Climate and Health Assessment 2016, U.S. Global Change Research Program, 2016</a></li>
+				<div class="fact">
+					<b class="peopleCircle">2</b><p class="peopleHead">THE SEVERITY OF CLIMATE CHANGE IMPACTS ARE AFFECTED BY <u>SYSTEMIC INEQUITIES BASED ON RACE, CLASS, GENDER ETC</u>.</p>
+				</div>
 
-			<li class="people">Many people will experience adverse mental health outcomes and social impacts from the threat of climate change, the perceived direct experience of climate change, and changes to one’s local environment. Media and popular culture representations of climate change influence stress responses and mental health and well-being.<br><a href="https://health2016.globalchange.gov/" target="_blank">Mental Health and Well-Being Summary, Climate and Health Assessment 2016, U.S. Global Change Research Program, 2016</a></li>
+				<li class="people">Specific groups of people are at higher risk for distress and other adverse mental health consequences from exposure to climate-related or weather-related disasters. These groups include children, the elderly, women (especially pregnant and postpartum women), people with preexisting mental illness, the economically disadvantaged, the homeless, and first responders.<br><a href="https://health2016.globalchange.gov/" target="_blank">Mental Health and Well-Being Summary, Climate and Health Assessment 2016, U.S. Global Change Research Program, 2016</a></li>
 
-			<li class="people">Many people exposed to climate related or weather-related disasters experience stress and serious mental health consequences. Depending on the type of the disaster, these consequences include post-traumatic stress disorder (PTSD), depression, and general anxiety, which often occur at the same time. The majority of affected people recover over time, although a significant proportion of exposed individuals develop chronic psychological dysfunction.<br><a href="https://health2016.globalchange.gov/" target="_blank">Mental Health and Well-Being Summary, Climate and Health Assessment 2016, U.S. Global Change Research Program, 2016</a></li>
+				<div class="fact">
+					<b class="peopleCircle">3</b><p class="peopleHead">AS OF 2014, HOW MANY AMERICANS LIVED IN COUNTIES THAT WERE BREATHING BAD AIR? <u>57 MILLION</u></p>
+				</div>
 
-			<li class="people">Communities that rely on the natural environment for sustenance and livelihood, as well as populations living in areas most susceptible to specific climate change events, are at increased risk for adverse mental health outcomes.<br><a href="https://health2016.globalchange.gov/" target="_blank">Mental Health and Well-Being Summary, Climate and Health Assessment 2016, U.S. Global Change Research Program, 2016</a></li>
+				<li class="people">Despite significant improvements in U.S. air quality since the 1970s, as of 2014 about 57 million Americans lived in counties that did not meet national air quality standards. Climate change may make it even harder for states to meet these standards in the future, exposing more people to unhealthy air.<br><a href="https://health2016.globalchange.gov/" target="_blank">Climate Impacts on Human Health, United States Environmental Protection Agency, 2017</a></li>
 
-			<li class="planet">The concentration of CO2 in the atmosphere is higher than at any time in at least 800,000 years.<br><a href="https://www.bbc.com/news/science-environment-24021772" target="_blank">What is climate change? A really simple guide, BBC, 2020</a></li>
+				<div class="fact">
+					<b class="peopleCircle">4</b><p class="peopleHead">WHAT WILL HAPPEN TO VECTOR-BORNE DISEASES BECAUSE OF CLIMATE CHANGE? <u>EXISTING ONES WILL EXPAND AND NEW ONES WILL EMERGE</u></p>
+				</div>
 
-			<li class="planet">Because warm, stagnant air tends to increase the formation of ozone, climate change is likely to increase levels of ground-level ozone in already-polluted areas of the United States and increase the number of days with poor air quality.<br><a href="https://health2016.globalchange.gov/" target="_blank">Climate Impacts on Human Health, United States Environmental Protection Agency, 2017</a></li>
+				<li class="people">Climate change is expected to alter the geographic and seasonal distributions of existing vectors and vector-borne diseases. Vector-borne pathogens are expected to emerge or reemerge due to the interactions of climate factors with many other drivers, such as changing land-use patterns.<br><a href="https://health2016.globalchange.gov/" target="_blank">Vector-Borne Diseases Summary, Climate and Health Assessment 2016, U.S. Global Change Research Program, 2016</a></li>
 
-			<li class="planet">Wildfires, which are expected to continue to increase in number and severity as the climate changes, create smoke and other unhealthy air pollutants.<br><a href="https://health2016.globalchange.gov/" target="_blank">Climate Impacts on Human Health, United States Environmental Protection Agency, 2017</a></li>
+				<div class="fact">
+					<b class="peopleCircle">5</b><p class="peopleHead">WHAT IS THE IMPACT OF CLIMATE CHANGE RELATED INCREASES IN WATER TEMPERATURE? <u>A BOOM IN TOXIC DISEASE-CAUSING ALGAE GROWTH</u></p>
+				</div>
 
-			<li class="planet">People and animals and their diseases have been frozen in the permafrost for hundreds of years, but bacteria and viruses can survive in permafrost for hundreds of thousands of years—scientists recently revived a 30,000-year-old virus that infects amoebas. Diseases like the Spanish flu, smallpox or the plague that have been wiped out might be frozen in the permafrost. As the Arctic warms, more activity, like mining for rare earth or precious metals, could potentially put us in contact with them again.<br><a href="https://news.climate.columbia.edu/2018/01/11/thawing-permafrost-matters/" target="_blank">Why Thawing Permafrost Matters, State of the Planet, Columbia Climate School, 2018</a></li>
+				<li class="people">Increases in water temperatures associated with climate change will alter the seasonal windows of growth and the geographic range of suitable habitat for freshwater toxin-producing harmful algae, certain naturally occurring Vibrio bacteria, and marine toxin-producing harmful algae. These changes will increase the risk of exposure to waterborne pathogens and algal toxins that can cause a variety of illnesses.<br><a href="https://health2016.globalchange.gov/" target="_blank">Water-Related Illness, Climate and Health Assessment 2016, U.S. Global Change Research Program, 2016</a></li>
 
-			<li class="planet">The two major causes of global sea level rise are thermal expansion caused by warming of the ocean (since water expands as it warms) and increased melting of land-based ice, such as glaciers and ice sheets. This puts coastal areas at greater risk of erosion and destructive storm surges and nuisance flooding which push land farther inland than they once did.<br><a href="https://oceanservice.noaa.gov/facts/sealevel.html" target="_blank">Is Sea Level Rising?, National Oceanic and Atmospheric Administration, U.S. Department of Commerce</a></li>
+				<div class="fact">
+					<b class="peopleCircle">6</b><p class="peopleHead">CLIMATE CHANGE CAN WORSEN PUBLIC <u>MENTAL HEALTH</u>.</p>
+				</div>
 
-			<li class="planet">Corals form one of the most biodiverse ecosystems, yet they are among the most rapidly declining species groups due to mass bleaching, disease and die-offs caused by rising ocean temperatures, as well ocean acidification.<br><a href="https://www.iucn.org/resources/issues-briefs/species-and-climate-change#:~:text=Climate%20change%20is%20currently%20affecting,direct%20result%20of%20climate%20change." target="_blank">Species and Climate Change, Issues Brief, International Union for Conservation of Nature</a></li>
+				<li class="people">Many people will experience adverse mental health outcomes and social impacts from the threat of climate change, the perceived direct experience of climate change, and changes to one’s local environment. Media and popular culture representations of climate change influence stress responses and mental health and well-being.<br><a href="https://health2016.globalchange.gov/" target="_blank">Mental Health and Well-Being Summary, Climate and Health Assessment 2016, U.S. Global Change Research Program, 2016</a></li>
 
-			<li class="planet">Invasive alien species are among the main causes of biodiversity loss and species extinctions, and the proliferation of invasive species is often exacerbated by climate change. Native to South America, the water hyacinth (Eichhornia crassipes) can now be found in parts of every continent except Antarctica, and it is expected to increase its range as the climate warms. The hyacinth deoxygenates rivers, killing fish populations, which in turn reduces income and food supply for local communities.<br><a href="https://www.iucn.org/resources/issues-briefs/species-and-climate-change#:~:text=Climate%20change%20is%20currently%20affecting,direct%20result%20of%20climate%20change." target="_blank">Species and Climate Change, Issues Brief, International Union for Conservation of Nature</a></li>
+				<div class="fact">
+					<b class="peopleCircle">7</b><p class="peopleHead">MANY PEOPLE EXPOSED TO CLIMATE CHANGE RELATED DISASTERS DEVELOP <u>PTSD, DEPRESSION, GENERAL ANXIETY, AND CHRONIC PSYCHOLOGICAL DYSFUNCTION</u></p>
+				</div>
 
-			<li class="planet">Climate change affects the ability of plant species to sequester carbon, turning carbon sinks into carbon sources. Warmer temperatures are also increasingly leading to tree death caused by disease, drought conditions and an upsurge in the number and severity of forest fires, which leads to an increase in carbon emissions.<br><a href="https://www.iucn.org/resources/issues-briefs/species-and-climate-change#:~:text=Climate%20change%20is%20currently%20affecting,direct%20result%20of%20climate%20change." target="_blank">Species and Climate Change, Issues Brief, International Union for Conservation of Nature</a></li>
+				<li class="people">Many people exposed to climate related or weather-related disasters experience stress and serious mental health consequences. Depending on the type of the disaster, these consequences include post-traumatic stress disorder (PTSD), depression, and general anxiety, which often occur at the same time. The majority of affected people recover over time, although a significant proportion of exposed individuals develop chronic psychological dysfunction.<br><a href="https://health2016.globalchange.gov/" target="_blank">Mental Health and Well-Being Summary, Climate and Health Assessment 2016, U.S. Global Change Research Program, 2016</a></li>
 
-			<li class="profit">The total loss incurred in the United States due to extreme events hurricanes, heat waves and droughts, tornadoes and severe storms, and flooding between 2004 - 2013.<br><a href="https://health2016.globalchange.gov/" target="_blank">Extreme Events Summary, Climate and Health Assessment 2016, U.S. Global Change Research Program, 2016</a></li>
+				<div class="fact">
+					<b class="peopleCircle">8</b><p class="peopleHead">WHO CONSTITUTES ONE OF THE MAIN POPULATIONS OF CONCERN REGARDING CLIMATE CHANGE? <u>INDIGENOUS PEOPLE WHO RELY ON THEIR NATURAL ENVIRONMENT</u></p>
+				</div>
 
-			<li class="profit">The sector most vulnerable to climate risk is agriculture.<br><a href="https://news.climate.columbia.edu/2019/06/20/climate-change-economy-impacts/" target="_blank">How Climate Change Impacts the Planet, State of the Planet, Columbia Climate School, 2019</a></li>
+				<li class="people">Communities that rely on the natural environment for sustenance and livelihood, as well as populations living in areas most susceptible to specific climate change events, are at increased risk for adverse mental health outcomes.<br><a href="https://health2016.globalchange.gov/" target="_blank">Mental Health and Well-Being Summary, Climate and Health Assessment 2016, U.S. Global Change Research Program, 2016</a></li>
 
-			<li class="profit">As explained by the World Commission on the Economy and Climate in a report at the end of 2018, adopting ambitious climate measures may generate profits of USD$26 billion by 2030, creating 65 million new jobs with low carbon emissions.<br><a href="https://www.iberdrola.com/environment/impacts-of-climate-change" target="_blank">How is climate change affecting the economy and society?, Iberdrola</a></li>
+				<!--PLANET-->
 
-			<li class="profit">According to the Environmental Protection Agency, the primary U.S. sources of greenhouse gas emission in 2018 were electricity generation, transportation, industry, commercial and residential, and agriculture.<br><a href="https://www.epa.gov/ghgemissions/sources-greenhouse-gas-emissions" target="_blank">Sources of Greenhouse Gas Emissions, United States Environmental Protection Agency</a></li>
+				<div class="fact">
+					<b class="planetCircle">9</b><p class="planetHead">THE <u>CO2</u> CONCENTRATION IN THE ATMOSPHERE IS THE HIGHEST IT’S BEEN IN AT LEAST 80,000 YEARS.</p>
+				</div>
 
-			<li class="profit">The World Employment and Social Outlook 2018 estimated that 1.2 billion jobs are directly dependent upon the healthy and sustainable management of the environment.<br><a href="https://www.ilo.org/weso-greening/documents/WESO_Greening_EN_web2.pdf" target="_blank">Greening with Jobs, World Employment Social Outlook, International Labour Organisation, 2018</a></li>
+				<li class="planet">The concentration of CO2 in the atmosphere is higher than at any time in at least 800,000 years.<br><a href="https://www.bbc.com/news/science-environment-24021772" target="_blank">What is climate change? A really simple guide, BBC, 2020</a></li>
 
-			<li class="profit">Climate change creates mass migration around the world. People are leaving flooded coastlines, drought-stricken farmlands, and areas of extreme natural disasters. From 2008 to 2018, events related to climate or weather have displaced 22.5 million people annually, according to the United Nations High Commissioner for Refugees. Some forecasts predict that, by 2050, climate change could cause as many as 1 billion people to emigrate.<br><a href="https://www.unhcr.org/en-us/environment-disasters-and-climate-change.html" target="_blank">Environment, Disasters, and Climate Change, United Nations High Commissioner for Refugees USA</a><br><a href="https://publications.iom.int/system/files/pdf/mecc_outlook.pdf" target="_blank">IOM Outlook on Migration, Environment and Climate Change, International Organisation for Migration (IOM)</a></li>
+				<div class="fact">
+					<b class="planetCircle">10</b><p class="planetHead">WHAT DOES WARM, STAGNANT AIR LEAD TO THE FORMATION OF? <u>OZONE</u></p>
+				</div>
 
-			<li class="profit">In 2017, Congress proclaimed that “climate change is a direct threat to the national security of the United States.” A three-foot increase in sea levels would endanger 128 military bases in the U.S. Aside from the security threats, these 128 bases are valued at roughly $100 billion.<br><a href="https://www.ucsusa.org/sites/default/files/attach/2016/07/us-military-on-front-lines-of-rising-seas_all-materials.pdf" target="_blank">The US Military on the Front Lines of Rising Seas, Union of Concerned Scientists</a></li>
+				<li class="planet">Because warm, stagnant air tends to increase the formation of ozone, climate change is likely to increase levels of ground-level ozone in already-polluted areas of the United States and increase the number of days with poor air quality.<br><a href="https://health2016.globalchange.gov/" target="_blank">Climate Impacts on Human Health, United States Environmental Protection Agency, 2017</a></li>
 
-			<li class="profit">Depending on the crop and ecosystem, weeds, pests, and fungi can also thrive under warmer temperatures, wetter climates, and increased CO2 levels, and climate change will likely increase weeds and pests.<br><a href="https://climate.nasa.gov/causes/" target="_blank">The Causes of Climate Change, Global Climate Change, National Aeronautics and Space Administration USA</a></li>
-		</ol>
-		
+				<div class="fact">
+					<b class="planetCircle">11</b><p class="planetHead"><u>WILDFIRES</u> ARE EXPECTED TO CONTINUE TO INCREASE IN NUMBER AS THE CLIMATE CHANGES.</p>
+				</div>
+
+				<li class="planet">Wildfires, which are expected to continue to increase in number and severity as the climate changes, create smoke and other unhealthy air pollutants.<br><a href="https://health2016.globalchange.gov/" target="_blank">Climate Impacts on Human Health, United States Environmental Protection Agency, 2017</a></li>
+
+				<div class="fact">
+					<b class="planetCircle">12</b><p class="planetHead">WHAT IS A CONSEQUENCE OF MELTING PERMAFROST? <u>THE RESURRECTION OF FROZEN ANCIENT BACTERIA</u></p>
+				</div>
+
+				<li class="planet">People and animals and their diseases have been frozen in the permafrost for hundreds of years, but bacteria and viruses can survive in permafrost for hundreds of thousands of years—scientists recently revived a 30,000-year-old virus that infects amoebas. Diseases like the Spanish flu, smallpox or the plague that have been wiped out might be frozen in the permafrost. As the Arctic warms, more activity, like mining for rare earth or precious metals, could potentially put us in contact with them again.<br><a href="https://news.climate.columbia.edu/2018/01/11/thawing-permafrost-matters/" target="_blank">Why Thawing Permafrost Matters, State of the Planet, Columbia Climate School, 2018</a></li>
+
+				<div class="fact">
+					<b class="planetCircle">13</b><p class="planetHead">WHAT CAUSES RISING SEA LEVELS? <u>THERMAL EXPANSION AND MELTING LAND ICE SHEETS</u></p>
+				</div>
+
+				<li class="planet">The two major causes of global sea level rise are thermal expansion caused by warming of the ocean (since water expands as it warms) and increased melting of land-based ice, such as glaciers and ice sheets. This puts coastal areas at greater risk of erosion and destructive storm surges and nuisance flooding which push land farther inland than they once did.<br><a href="https://oceanservice.noaa.gov/facts/sealevel.html" target="_blank">Is Sea Level Rising?, National Oceanic and Atmospheric Administration, U.S. Department of Commerce</a></li>
+
+				<div class="fact">
+					<b class="planetCircle">14</b><p class="planetHead">CORALS ECOSYSTEMS ARE DYING BECAUSE OF <u>MASS BLEACHING, DISEASE, DIE-OFFS, AND OCEAN ACIDIFICATION</u>.</p>
+				</div>
+
+				<li class="planet">Corals form one of the most biodiverse ecosystems, yet they are among the most rapidly declining species groups due to mass bleaching, disease and die-offs caused by rising ocean temperatures, as well ocean acidification.<br><a href="https://www.iucn.org/resources/issues-briefs/species-and-climate-change#:~:text=Climate%20change%20is%20currently%20affecting,direct%20result%20of%20climate%20change." target="_blank">Species and Climate Change, Issues Brief, International Union for Conservation of Nature</a></li>
+
+				<div class="fact">
+					<b class="planetCircle">15</b><p class="planetHead">THE PROLIFERATION OF <u>INVASIVE ALIEN SPECIES</u> IS EXACERBATED BY CLIMATE CHANGE.</p>
+				</div>
+
+				<li class="planet">Invasive alien species are among the main causes of biodiversity loss and species extinctions, and the proliferation of invasive species is often exacerbated by climate change. Native to South America, the water hyacinth (Eichhornia crassipes) can now be found in parts of every continent except Antarctica, and it is expected to increase its range as the climate warms. The hyacinth deoxygenates rivers, killing fish populations, which in turn reduces income and food supply for local communities.<br><a href="https://www.iucn.org/resources/issues-briefs/species-and-climate-change#:~:text=Climate%20change%20is%20currently%20affecting,direct%20result%20of%20climate%20change." target="_blank">Species and Climate Change, Issues Brief, International Union for Conservation of Nature</a></li>
+
+				<div class="fact">
+					<b class="planetCircle">16</b><p class="planetHead">WHAT ARE CARBON SINKS TURNING INTO? <u>CARBON SOURCES</u></p>
+				</div>
+
+				<li class="planet">Climate change affects the ability of plant species to sequester carbon, turning carbon sinks into carbon sources. Warmer temperatures are also increasingly leading to tree death caused by disease, drought conditions and an upsurge in the number and severity of forest fires, which leads to an increase in carbon emissions.<br><a href="https://www.iucn.org/resources/issues-briefs/species-and-climate-change#:~:text=Climate%20change%20is%20currently%20affecting,direct%20result%20of%20climate%20change." target="_blank">Species and Climate Change, Issues Brief, International Union for Conservation of Nature</a></li>
+
+				<!--PROFIT-->
+
+				<div class="fact">
+					<b class="profitCircle">17</b><p class="profitHead">BETWEEN 2004 - 2013, THE US LOST <u>546 BILLION</u> DUE TO CLIMATE CHANGE RELATED NATURAL DISASTERS.</p>
+				</div>
+
+				<li class="profit">The total loss incurred in the United States due to extreme events hurricanes, heat waves and droughts, tornadoes and severe storms, and flooding between 2004 - 2013.<br><a href="https://health2016.globalchange.gov/" target="_blank">Extreme Events Summary, Climate and Health Assessment 2016, U.S. Global Change Research Program, 2016</a></li>
+
+				<div class="fact">
+					<b class="profitCircle">18</b><p class="profitHead">WHICH SECTOR IS MOST VULNERABLE TO CLIMATE RISK? <u>AGRICULTURE</u></p>
+				</div>
+
+				<li class="profit">The sector most vulnerable to climate risk is agriculture.<br><a href="https://news.climate.columbia.edu/2019/06/20/climate-change-economy-impacts/" target="_blank">How Climate Change Impacts the Planet, State of the Planet, Columbia Climate School, 2019</a></li>
+
+				<div class="fact">
+					<b class="profitCircle">19</b><p class="profitHead">WHO BENEFITS MOST FROM WARMER TEMPERATURES? <u>WEEDS AND PESTS</u></p>
+				</div>
+
+				<li class="profit">As explained by the World Commission on the Economy and Climate in a report at the end of 2018, adopting ambitious climate measures may generate profits of USD$26 billion by 2030, creating 65 million new jobs with low carbon emissions.<br><a href="https://www.iberdrola.com/environment/impacts-of-climate-change" target="_blank">How is climate change affecting the economy and society?, Iberdrola</a></li>
+
+				<div class="fact">
+					<b class="profitCircle">20</b><p class="profitHead">WHAT ARE THE BENEFITS OF ADOPTING AMBITIOUS CLIMATE MEASURES? <u>PROFITS OF USD26 BILLION AND 65 MILLION NEW JOBS</u></p>
+				</div>
+
+				<li class="profit">According to the Environmental Protection Agency, the primary U.S. sources of greenhouse gas emission in 2018 were electricity generation, transportation, industry, commercial and residential, and agriculture.<br><a href="https://www.epa.gov/ghgemissions/sources-greenhouse-gas-emissions" target="_blank">Sources of Greenhouse Gas Emissions, United States Environmental Protection Agency</a></li>
+
+				<div class="fact">
+					<b class="profitCircle">21</b><p class="profitHead">IN 2018, THE PRIMARY US SOURCE OF GREENHOUSE GAS EMISSION WAS <u>ELECTRICITY GENERATION</u>.</p>
+				</div>
+
+				<li class="profit">The World Employment and Social Outlook 2018 estimated that 1.2 billion jobs are directly dependent upon the healthy and sustainable management of the environment.<br><a href="https://www.ilo.org/weso-greening/documents/WESO_Greening_EN_web2.pdf" target="_blank">Greening with Jobs, World Employment Social Outlook, International Labour Organisation, 2018</a></li>
+
+				<div class="fact">
+					<b class="profitCircle">22</b><p class="profitHead">HOW MANY JOBS GLOBALLY ARE DEPENDENT UPON SUSTAINABLE MANAGEMENT OF THE ENVIRONMENT? <u>1.2 BILLION</u></p>
+				</div>
+
+				<li class="profit">Climate change creates mass migration around the world. People are leaving flooded coastlines, drought-stricken farmlands, and areas of extreme natural disasters. From 2008 to 2018, events related to climate or weather have displaced 22.5 million people annually, according to the United Nations High Commissioner for Refugees. Some forecasts predict that, by 2050, climate change could cause as many as 1 billion people to emigrate.<br><a href="https://www.unhcr.org/en-us/environment-disasters-and-climate-change.html" target="_blank">Environment, Disasters, and Climate Change, United Nations High Commissioner for Refugees USA</a><br><a href="https://publications.iom.int/system/files/pdf/mecc_outlook.pdf" target="_blank">IOM Outlook on Migration, Environment and Climate Change, International Organisation for Migration (IOM)</a></li>
+
+				<div class="fact">
+					<b class="profitCircle">23</b><p class="profitHead">BY 2050, CLIMATE CHANGE COULD CAUSE <u>1 BILLION PEOPLE</u> TO EMIGRATE.</p>
+				</div>
+
+				<li class="profit">In 2017, Congress proclaimed that “climate change is a direct threat to the national security of the United States.” A three-foot increase in sea levels would endanger 128 military bases in the U.S. Aside from the security threats, these 128 bases are valued at roughly $100 billion.<br><a href="https://www.ucsusa.org/sites/default/files/attach/2016/07/us-military-on-front-lines-of-rising-seas_all-materials.pdf" target="_blank">The US Military on the Front Lines of Rising Seas, Union of Concerned Scientists</a></li>
+
+				<div class="fact">
+					<b class="profitCircle">24</b><p class="profitHead">A THREE-FOOT INCREASE IN SEA LEVELS WOULD ENDANGER <u>128 MILITARY BASES</u> IN THE US.</p>
+				</div>
+
+				<li class="profit">Depending on the crop and ecosystem, weeds, pests, and fungi can also thrive under warmer temperatures, wetter climates, and increased CO2 levels, and climate change will likely increase weeds and pests.<br><a href="https://climate.nasa.gov/causes/" target="_blank">The Causes of Climate Change, Global Climate Change, National Aeronautics and Space Administration USA</a></li>
+			</ul>
+			
+		</div>
 	</div>
 
 </html>

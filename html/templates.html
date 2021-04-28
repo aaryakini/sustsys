@@ -12,33 +12,48 @@
 </head>
 
 <body>
-	<div class="banner">
-		<h1>Cards Against Humanity</h1>
-		<h2>CLIMATE CHANGE PACK</h2>
-	</div>
+	<script src="../js/index.js"></script>
 
-	<div class="navbar">
+	<!--
+		Title: How to Collapse Sidebar
+		Author: W3 Schools
+		Date: Accessed 26th April 2021
+		Code version: Source Code
+		Availability: https://www.w3schools.com/howto/howto_js_collapse_sidebar.asp
+	-->
+
+	<div id="mySidebar" class="sidebar">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		<a href="../index.html">PROMPT CARDS</a>
-		<a href="rules.html">HOW TO PLAY</a>
-		<a href="facts.html">REAL FACTS</a>
-		<a href="templates.html">MAKE YOUR OWN</a>
+		<a href="html/rules.html">HOW TO PLAY</a>
+		<a href="html/facts.html" target=_blank>FACT SHEET</a>
+		<a href="html/templates.html">MAKE YOUR OWN</a>
 	</div>
 
-	<div id="templates">
-		<h1>TEMPLATES</h1>
+	<div id="main">
+		<div class="banner">
+			<button class="openbtn" onclick="openNav()">&#9776;</button>
+	<!-------------------------------------------------------------->
+			<img id="bannerimg" src="../assets/banner.gif" style = "height: 400px">
+		</div>
 
-		<p>Below is a .pdf of all the cards in this game. Download the .pdf and print all of the pages double sided to get cards that you can cut out and use to play the game. If you do not need the QR code to access the website, make sure not to print the last page!</p>
+		<div id="templates">
+			<h1>TEMPLATES</h1>
 
-		<a href="../assets/allcards.pdf" target="_blank">CARDS AGAINST HUMANITY: CLIMATE CHANGE PACK</a>
+			<p>Below is a .pdf of all the cards in this game. Download the .pdf and print all of the pages double sided to get cards that you can cut out and use to play the game. If you do not need the QR code to access the website, make sure not to print the last page!</p>
 
-		<p>Below is an Illustrator template that you can download to make your own cards!</p>
+			<a href="../assets/allcards.pdf" target="_blank">CARDS AGAINST HUMANITY: CLIMATE CHANGE PACK</a>
 
-		<a href="../assets/cardtemplate.ai" target="_blank">CARD TEMPLATES</a>
+			<p>Below is an Illustrator template that you can download to make your own cards!</p>
 
-		<p>Below is an Illustrator template that you can download and print to make a box for your response cards!</p>
+			<a href="../assets/cardtemplate.ai" target="_blank">CARD TEMPLATES</a>
 
-		<a href="../assets/package.ai" target="_blank">BOX PACKAGE</a>
+			<p>Below is an Illustrator template that you can download and print to make a box for your response cards!</p>
 
-		<p>While printing cards can make the game more portable, accesible, and hence easier to play, please be conscious of how much ink and paper you use when printing! Save the trees!</p>
+			<a href="../assets/package.ai" target="_blank">BOX PACKAGE</a>
+
+			<p>While printing cards can make the game more portable, accesible, and hence easier to play, please be conscious of how much ink and paper you use when printing! Save the trees!</p>
+		</div>
+	</div>
 
 </html>
